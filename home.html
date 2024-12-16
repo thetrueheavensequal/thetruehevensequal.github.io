@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="pngegg.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #1c2331;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            overflow: hidden;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background-color: #2a2f3a;
+            width: 25%;
+            max-width: 300px;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #3b4252;
+        }
+
+        @font-face {
+            font-family: demo;
+            src: url(/public/assets/fonts/Clovedoper\ Demo\ 400.ttf);
+        }
+
+        .sidebar header {
+            background-color: #FFCD8C;
+            padding: 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #000000af;
+            text-align: center;
+            font-family: demo;
+        }
+
+        .contacts {
+            flex: 1;
+            overflow-y: auto;
+            padding: 10px;
+        }
+
+        .contact {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #3b4252;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact:hover {
+            background-color: #3b4252;
+        }
+
+        .contact img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .contact .name {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        /* Chat area */
+        .chat-area {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background-color: #1e2835;
+        }
+
+        .chat-header {
+            background-color: #2a2f3a;
+            padding: 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-bottom: 1px solid #3b4252;
+        }
+
+        .messages {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .input-area {
+            padding: 10px;
+            background-color: #2a2f3a;
+            display: flex;
+            align-items: center;
+            border-top: 1px solid #3b4252;
+        }
+
+        .input-area input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .input-area button {
+            background-color: #00aaff;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            margin-left: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .input-area button:hover {
+            background-color: #008ecc;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <header>Chats</header>
+        <div class="contacts">
+            <div class="contact">
+                <img src="https://via.placeholder.com/40" alt="Avatar">
+                <div class="name">Euph</div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat Area -->
+    <div class="chat-area">
+        <div class="chat-header"> Euph </div>
+        <div class="messages">
+            <!-- Messages would go here -->
+        </div>
+        <div class="input-area">
+            <input type="text" placeholder="Type a message...">
+            <button>Send</button>
+        </div>
+    </div>
+</body>
+</html>
+

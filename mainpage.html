@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="pngegg.ico">
+    <style>
+    
+        body{
+            margin: 0;
+            overflow: hidden;
+            background-image: url(starry.jpg);
+            background-size: cover;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            ;
+        }
+
+        h1{
+            text-align: center;
+            position: relative;
+            top: 205px;
+            color: antiquewhite;
+            font-family: Arial, Helvetica, sans-serif;
+            z-index: 1;
+        }
+
+        .login{
+            border: 2px solid rgb(255, 205, 140);
+            border-radius: 15px;
+            border-style: groove;
+            box-shadow: 0 0 10px rgb(255, 205, 140) inset;
+            width: 260px;
+            padding: 25px;
+            position: relative;
+            top:200px;
+            left:520px;
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.35);
+        }
+
+        .submit{
+            position: relative;
+            left: 100px;
+            top: 20px;
+            z-index: 1;
+        }
+
+        label{
+            color: antiquewhite;
+            font-family: demo;
+            font-size: 14px;
+            z-index: 1;
+        }
+
+        input[type=password]{
+            position: relative;
+            right: 3px;
+            z-index: 1;
+        }
+
+        input[type=submit]{
+            background-color: rgb(255, 205, 140);
+            border: thin solid black;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+            font-family: demo;
+            z-index: 1;
+        }
+
+        @font-face {
+            font-family: demo;
+            src: url(/public/assets/fonts/Clovedoper\ Demo\ 400.ttf);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1>LOGIN</h1>
+
+    </div>
+
+    <div class="login">
+<form action="home.html">
+    <div class="username">
+        <label for="uname"><b> username: </b></label>
+        <input type="text" name="uname" id="uname"><br><br>
+    </div>
+
+    <div class="pass">
+        <label for="pass"><b> password: </b></label>
+        <input type="password" name="pass" id="pass">
+    </div>
+
+    <div class="submit">
+        <input type="submit" value="submit">
+    </div>
+</form>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
